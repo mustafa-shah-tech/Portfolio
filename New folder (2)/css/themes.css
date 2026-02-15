@@ -1,0 +1,50 @@
+:root {
+    /* Base Palette - Optimized for Dark Tech Aesthetic */
+    --bg-primary: #0a0a0c;
+    --bg-secondary: #121216;
+    --bg-accent: rgba(255, 255, 255, 0.03);
+    
+    --text-primary: #f0f0f2;
+    --text-secondary: #a0a0ab;
+    --text-accent: #3b82f6; /* Modern Blue */
+    
+    --border-color: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    
+    --transition-speed: 0.3s;
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+[data-theme="light"] {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-accent: rgba(0, 0, 0, 0.02);
+    
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-accent: #2563eb;
+    
+    --border-color: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.05);
+    
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
