@@ -21,9 +21,12 @@ A high-end, responsive, and performance-optimized personal portfolio for a Medic
 - **Hero**: Dynamic typing animation for professional titles.
 - **About Me**: Concise intro highlighting the intersection of Healthcare and Technology.
 - **Skills**: Categorized cards (Programming, Web, Tools, Other) without distracting progress bars.
-- **Projects**: Credibility-focused cards with **Problem**, **Solution**, and **Outcome** metadata.
+- **Projects**: Featured real-world projects like **SaveMedia** (Media Archiver) and **Automated Lab Reporter** with Problem, Solution, and Outcome metadata.
 - **Learning Journey**: Vertical timeline with punchy milestones.
 - **Contact**: Direct action links for Email, GitHub, Fiverr, and WhatsApp.
+
+### 4. Visual Branding
+- **Site Icon**: Custom premium favicon linking to the portfolio's visual identity.
 
 ## 🛠 Tech Stack
 - **HTML5**: Semantic and accessible structure.
