@@ -33,17 +33,13 @@ A sophisticated, interactive hero component that blends mathematics with visual 
 
 ## 🚀 Key Projects
 
-### 📥 SaveMedia | [Repository](https://github.com/mustafa-shah-tech/savemedia.git)
-A premium media archiving suite designed to handle high-resolution content from major social platforms.
-- **Core**: Python & PyQt/Tkinter (GUI).
-- **Capabilities**: 4K/8K media extraction, multi-platform API integration, and themeable interface.
-- **Outcome**: Streamlined media workflows for creators and archivists.
+### 🌐 Professional Web Demos | [Live Demo](https://mustafa-shah-tech.github.io/my-demos/) | [Repository](https://github.com/mustafa-shah-tech/my-demos.git)
+A premium suite of high-performance landing page demos tailored for modern businesses.
+- **Includes**: Creative Agency (Studio Alpha), SaaS Product (FlowTech AI), and Modern Restaurant (The Artisan Kitchen) layouts.
+- **Core**: Semantic HTML5, CSS3 (Grid/Flexbox), and Vanilla JavaScript.
+- **Outcome**: 90+ Lighthouse performance scores with zero external dependencies.
 
-### 📝 Automated Lab Reporter
-A precision tool developed to bridge healthcare data with professional reporting.
-- **Core**: Python & ReportLab.
-- **Problem**: Inefficient manual medical transcription.
-- **Outcome**: 70% reduction in reporting time with 0 manual transcription errors.
+### 📥 SaveMedia | [Repository](https://github.com/mustafa-shah-tech/savemedia.git)
 
 ---
 
