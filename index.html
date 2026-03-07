@@ -5,8 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mustafa Shah | Web Developer & Medical Lab Tech</title>
-    <meta name="description"
-        content="Personal portfolio of Mustafa Shah - Medical Laboratory Technician and Web Developer.">
+    <meta name="description" content="Mustafa Shah — 
+freelance web developer and Medical Lab Technician 
+from Pakistan. Building fast, responsive websites 
+with HTML, CSS, JavaScript and Python automation tools.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mustafa Shah | Web Developer & Medical Lab Tech">
+    <meta property="og:description"
+        content="Bridging healthcare expertise and technical innovation. Web developer, Python learner, and Medical Lab Technician.">
+    <meta property="og:image" content="https://mustafa-shah-tech.github.io/Portfolio/assets/mustafa.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mustafa-shah-tech.github.io/Portfolio/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mustafa Shah | Web Developer & Medical Lab Tech">
+    <meta name="twitter:description" content="Bridging healthcare expertise and technical innovation.">
+    <meta name="twitter:image" content="https://mustafa-shah-tech.github.io/Portfolio/assets/mustafa.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mustafa-shah-tech.github.io/Portfolio/">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0c">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -32,6 +54,33 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
+
+    <!-- Fix: push main content below fixed header -->
+    <style>
+        main {
+            padding-top: 60px;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                padding-top: 70px;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mustafa Shah",
+  "url": "https://mustafa-shah-tech.github.io/Portfolio/",
+  "jobTitle": "Web Developer & Medical Laboratory Technician",
+  "sameAs": [
+    "https://github.com/mustafa-shah-tech",
+    "https://www.fiverr.com/s/995lX6A"
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -51,16 +100,16 @@
                 <button id="theme-toggle" aria-label="Toggle Theme">
                     <i class="fas fa-moon"></i>
                 </button>
+                <!-- Fixed: 3 spans required for hamburger → X animation -->
                 <button id="mobile-menu-btn" aria-label="Open Menu">
+                    <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
         </nav>
     </header>
-    <br>
-    <br>
-    <br>
+
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section glass">
@@ -68,7 +117,8 @@
                 <div class="avatar-container reveal">
                     <canvas id="avatar-canvas"></canvas>
                     <div class="avatar-wrapper glass">
-                        <img src="assets/mustafa.png" alt="SHAH G Profile" id="avatar-img">
+                        <img src="assets/mustafa.png" alt="Mustafa Shah - Web Developer and Medical Lab Technician"
+                            id="avatar-img" loading="lazy">
                         <div class="avatar-glow"></div>
                     </div>
                 </div>
@@ -87,11 +137,12 @@
                 <h2 class="section-title reveal">About Me</h2>
                 <div class="about-grid">
                     <div class="about-text glass reveal">
-                        <p>I am a <strong>Medical Laboratory Technician</strong> currently bridging the gap between
-                            healthcare and technology. As an aspiring <strong>Web Developer</strong> and Python learner,
-                            I focus on growth and building real-world tools that solve actual problems.</p>
-                        <p>My journey is about continuous learning and transitioning into the tech space through
-                            freelancing and practical project development.</p>
+                        <p>I am a certified Medical Laboratory Technician with hands-on clinical experience in
+                            diagnostics and laboratory data management. I am now transitioning into tech — building
+                            tools that bridge healthcare and software.</p>
+                        <p>I build with Vanilla HTML, CSS, and JavaScript with a focus on performance and clean code. My
+                            flagship project SaveMedia is a Python/PyQt desktop app for multi-platform media archiving.
+                            Currently focused on freelancing and growing my project portfolio.</p>
                     </div>
                 </div>
             </div>
@@ -122,6 +173,7 @@
                         <div class="skill-tags">
                             <span class="skill-tag">GitHub</span>
                             <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Antigravity</span>
                         </div>
                     </div>
                     <div class="skill-category glass reveal">
@@ -157,9 +209,9 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://mustafa-shah-tech.github.io/my-demos/" class="btn btn-outline"
-                                    target="_blank">Live Demo</a>
+                                    target="_blank" rel="noopener noreferrer">Live Demo</a>
                                 <a href="https://github.com/mustafa-shah-tech/my-demos.git" class="btn btn-outline"
-                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -173,6 +225,9 @@
                                 for multi-platform media downloading and archiving.</p>
                             <p class="project-meta"><strong>Outcome:</strong> Unified, theme-able interface supporting
                                 4K/8K downloads from YouTube, Instagram, and more.</p>
+                            <p class="project-meta">
+                                <strong>Note:</strong> Desktop app — screenshot available on GitHub repository.
+                            </p>
                             <div class="project-tech">
                                 <span>Python</span>
                                 <span>PyQt</span>
@@ -180,7 +235,7 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/mustafa-shah-tech/savemedia.git" class="btn btn-outline"
-                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -197,7 +252,8 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass">
                             <h3>MLT Graduation</h3>
-                            <p>Completed professional training in Medical Laboratory Technology with clinical
+                            <span class="timeline-date">2022</span>
+                            <p>Completed training in Medical Laboratory Technology with clinical
                                 excellence.</p>
                         </div>
                     </div>
@@ -205,6 +261,7 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass">
                             <h3>Python Foundations</h3>
+                            <span class="timeline-date">2023</span>
                             <p>Started exploring automation to simplify repetitive laboratory data processing tasks.</p>
                         </div>
                     </div>
@@ -212,6 +269,7 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass">
                             <h3>Web Tech Mastery</h3>
+                            <span class="timeline-date">2024</span>
                             <p>Mastering HTML, CSS, and JS to build interactive healthcare dashboards.</p>
                         </div>
                     </div>
@@ -219,6 +277,7 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass">
                             <h3>Freelance Launch</h3>
+                            <span class="timeline-date">2025</span>
                             <p>Providing tech solutions for healthcare professionals and small business owners.</p>
                         </div>
                     </div>
@@ -237,15 +296,18 @@
                             <i class="fas fa-envelope"></i>
                             <span>Email</span>
                         </a>
-                        <a href="https://github.com/mustafa-shah-tech" class="contact-item" target="_blank">
+                        <a href="https://github.com/mustafa-shah-tech" class="contact-item" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.fiverr.com/s/995lX6A" class="contact-item" target="_blank">
+                        <a href="https://www.fiverr.com/s/995lX6A" class="contact-item" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fas fa-briefcase"></i>
                             <span>Fiverr</span>
                         </a>
-                        <a href="https://wa.me/923143928492" class="contact-item" target="_blank">
+                        <a href="https://wa.me/923143928492" class="contact-item" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fab fa-whatsapp"></i>
                             <span>WhatsApp</span>
                         </a>
@@ -253,6 +315,12 @@
                 </div>
             </div>
         </section>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>© <span id="year"></span> Mustafa Shah. Built with precision.</p>
+            </div>
+        </footer>
     </main>
 
     <!-- Scripts -->

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mustafa-shah-tech.github.io/Portfolio/sitemap.xml

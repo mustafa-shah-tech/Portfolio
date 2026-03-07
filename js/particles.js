@@ -1,6 +1,10 @@
 class ParticleSystem {
     constructor() {
         this.canvas = document.getElementById('particle-canvas');
+        if (window.innerWidth < 768) {
+            this.canvas.style.display = 'none';
+            return;
+        }
         this.ctx = this.canvas.getContext('2d');
         this.particles = [];
         this.fpsCap = 30;

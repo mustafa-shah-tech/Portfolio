@@ -35,12 +35,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
+            target.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });
+
 // Typewriter Effect
 const typewriter = document.getElementById('typewriter');
 const texts = [
@@ -68,7 +67,7 @@ function type() {
 
     if (!isDeleting && charIndex === currentText.length) {
         isDeleting = true;
-        typeSpeed = 2000; // Pause at end
+        typeSpeed = 2000;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         textIndex = (textIndex + 1) % texts.length;
@@ -79,3 +78,5 @@ function type() {
 }
 
 document.addEventListener('DOMContentLoaded', type);
+
+document.getElementById('year').textContent = new Date().getFullYear();
