@@ -19,6 +19,7 @@ nav.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -143,6 +144,7 @@ nav.container {
         border: none;
         padding: 0;
         gap: 2rem;
+        margin-left: auto;
     }
 
     .nav-links li a {
@@ -152,6 +154,10 @@ nav.container {
 
     .nav-links li a:hover {
         background: none;
+    }
+
+    .nav-actions {
+        margin-left: 2rem;
     }
 
     #mobile-menu-btn {
