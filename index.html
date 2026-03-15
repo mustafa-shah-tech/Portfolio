@@ -44,8 +44,11 @@ with HTML, CSS, JavaScript and Python automation tools.">
     <!-- Pre-render Theme Detection (Prevent Flicker) -->
     <script>
         (function () {
-            const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-theme', savedTheme);
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia(
+                '(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
 
