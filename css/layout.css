@@ -82,6 +82,9 @@ nav.container {
 }
 
 #theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     color: var(--text-primary);
